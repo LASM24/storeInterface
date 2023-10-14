@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first-store';
+
+ /* addToCart(product: Product){
+  product.cantidad= product.cantidad -1  
+  this.items.push(product);
+  }*/
 }

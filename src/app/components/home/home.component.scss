@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+    box-shadow: 5px 5px 10px #000;
+    background-color: #fff;
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+
+    &__title {
+      text-align: center;
+    }
+
+    &__photo {
+      display: flex;
+      position: relative;
+      margin: 50px auto;
+    }
+}
+
+
