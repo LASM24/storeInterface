@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MaterialModule } from 'src/MaterialModule';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 /* Componentes */ 
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import { MobilesComponent } from './components/mobiles/mobiles.component';
 import { LaptopsComponent } from './components/laptops/laptops.component';
 import { CartComponent } from './components/cart/cart.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import { CartComponent } from './components/cart/cart.component';
     HomeComponent,
     MobilesComponent,
     LaptopsComponent,
-    CartComponent
+    CartComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

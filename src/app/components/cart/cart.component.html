@@ -1,1 +1,17 @@
-<h1> HOLA</h1>
+<h3 class="cart-title">Carrito de compras</h3>
+
+<div class="cart">
+  <div class="cart-item" *ngFor="let item of items">
+    <img [src]="item.photo" [alt]="item.name" width="40px" height="40px" class="cart-item__image">
+    <span class="cart-item__name">{{ item.name }}</span>
+    <span class="cart-item__price">{{ item.price | currency }}</span>
+  </div>
+</div>
+
+<div class="button-container">
+  <button mat-raised-button class="button button--home" routerLink="/">
+    Volver al Inicio
+  </button>
+
+  <button mat-raised-button class="clear-button" (click)="clearCart()">Limpiar Carrito</button>
+</div>

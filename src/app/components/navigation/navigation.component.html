@@ -7,7 +7,7 @@
             </button>
             <span routerLink="" class="bar__name"> LASM STORE </span>
             <span class="bar__example-spacer"></span>
-            <button mat-button class="bar__cart" routerLink="cart">
+            <button mat-button class="bar__cart" routerLink="/cart">
                 <mat-icon>shopping_cart</mat-icon>
                 Cart
             </button>
@@ -15,7 +15,7 @@
     </mat-toolbar>
     
     <mat-sidenav-container class="container">
-        <mat-sidenav #sidenav opened="true" mode="side" class="sidenav">
+        <mat-sidenav #sidenav mode="side" class="sidenav">
             <mat-nav-list class="bar__sidenav__list">
                 <a mat-list-item routerLink="laptops">Laptops</a>
                 <a mat-list-item routerLink="mobiles">Mobiles</a>
