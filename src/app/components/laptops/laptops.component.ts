@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { pcproducts } from 'src/app/laptops';
+import { MatDialog } from '@angular/material/dialog';
+import { Productpc, pcproducts } from 'src/app/laptops';
+import { DialogLaptopsComponent } from '../dialog-laptops/dialog-laptops.component';
 
 @Component({
   selector: 'app-laptops',
@@ -9,12 +11,19 @@ import { pcproducts } from 'src/app/laptops';
 export class LaptopsComponent {
   pclist = [...pcproducts];
 
+  constructor(private matDialog: MatDialog) {}
+
   share(name:string) { 
-    window.alert('El producto ' + name + ' se ha compartido'); // accion de la funcion, en este caso, mostrar un alert
+    window.alert('El producto ' + name + ' se ha compartido'); 
   }
 
-  onNotify(){
-    window.alert('se le notificara cuando el producto salga a la vente');  
-    // al escuchar el evento ya relacionado con el componente padre (product-list) se muestra esta alerta
+  openDialog(pc: Productpc) {
+    this.matDialog.open(DialogLaptopsComponent, {
+      width: '400px', 
+      height: '500px', 
+      data: pc // Pasando el objeto pc al diálogo
+    });
+  
   }
+  
 }

@@ -1,0 +1,136 @@
+@use "/src/app/shared/variables";
+
+@media screen and (max-width: 800px) {
+
+    .contenedorPadre{
+        position: absolute;
+    }
+    
+    .container {
+        height: 25vh;
+        display: flex;
+    
+        .sidenav {
+            width: 150px; 
+            position: absolute;
+            top: variables.$toolbar-height; 
+            bottom: 0;
+    
+            &__list {
+                width: 100%; 
+                z-index: 4;
+            }
+        }
+    }
+    
+    .bar {
+        background-color:variables.$primary;
+        color: variables.$Colorfont;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        top: 0;
+    
+        &__name{
+            padding-left: 10px;
+            cursor: pointer;
+        }
+    
+        &__example-spacer {
+            flex: 1 1 auto;
+        }
+    
+        &__cart {
+            background-color: rgba(3,3,3, .5);
+            width: 6rem;
+            height: 3rem;
+        }
+    }
+
+
+
+
+
+
+
+
+  /*
+    // estilos para pantallas pequeñas
+    
+      .navbar {
+        font-size: 23px;
+        display: flex;
+        height: 70px;
+        background-color: antiquewhite;
+        align-items: center;
+        justify-content: space-around;
+      }
+    
+      .containermenu {
+        display: inline;
+      }
+    
+      .nav {
+        position: absolute; /* o position: fixed; 
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: burlywood;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+      }
+    
+      .nav.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+    
+      .abrir-menu {
+        display: block;
+      }
+    
+      .closedd {
+        display: block;
+      }
+    
+        // "desaparicion" del menu para pantallas pequeñas
+        .navbar--1{
+          display: none;
+        }
+      
+        .logo--1{
+          display: none;
+        }
+      
+        .abrir-menu--1{
+          display: none;
+        }
+      
+        .closedd--1{
+          display: none;
+        }
+      
+        .nav-list--1{
+          display: none;
+        }
+      
+        .nav--1{
+          display: none;
+        }
+      
+        .laptops--1{
+          display: none;
+        }
+      
+        .mopbiles--1{
+          display: none;
+        }*/
+}

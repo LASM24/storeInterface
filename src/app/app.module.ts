@@ -14,6 +14,8 @@ import { MobilesComponent } from './components/mobiles/mobiles.component';
 import { LaptopsComponent } from './components/laptops/laptops.component';
 import { CartComponent } from './components/cart/cart.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DialogMobilesComponent } from './components/dialog-mobiles/dialog-mobiles.component';
+import { DialogLaptopsComponent } from './components/dialog-laptops/dialog-laptops.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { FooterComponent } from './components/footer/footer.component';
     MobilesComponent,
     LaptopsComponent,
     CartComponent,
-    FooterComponent
+    FooterComponent,
+    DialogMobilesComponent,
+    DialogLaptopsComponent,
   ],
   imports: [
     BrowserModule,

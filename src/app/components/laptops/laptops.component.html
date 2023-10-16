@@ -3,23 +3,37 @@
   <div class="card-container" *ngFor="let pc of pclist">
     <mat-card class="card">
       <mat-card-title class="card__title">
-       
         <h3 class="card__title-text">
           <a class="card__title-link" [title]="pc.name + 'detalles'">
             {{ pc.name }}
           </a>
         </h3>
       </mat-card-title>
-
       <mat-card-content class="card__content">
-        <img class="photo" [src]="pc.photo" [alt]="pc.name" width="200px" height="200px" /> <br>
-        <button class="card__button card__button--share" type="button" (click)="share(pc.name)">
-          compartir
-        </button>
-
-        <button class="card__button card__button--details" type="button" [routerLink]="['/productspc', pc.id]">
-          Detalles
-        </button>
+        <img
+          class="photo"
+          [src]="pc.photo"
+          [alt]="pc.name"
+          width="200px"
+          height="200px"
+        />
+        <br />
+        <div class="button-group">
+          <button
+            class="card__button card__button--share"
+            type="button"
+            (click)="share(pc.name)"
+          >
+            Compartir
+          </button>
+          <button
+            mat-raised-button
+            (click)="openDialog(pc)"
+            class="card__button card__button--details"
+          >
+            Detalles
+          </button>
+        </div>
       </mat-card-content>
     </mat-card>
   </div>

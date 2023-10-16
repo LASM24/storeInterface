@@ -1,25 +1,23 @@
-
 <div class="contenedorPadre">
-    <mat-toolbar class="bar">
-        <mat-toolbar-row>
-            <button mat-icon-button (click)="toggleSidenav()">
-                <mat-icon>menu</mat-icon>
-            </button>
-            <span routerLink="" class="bar__name"> LASM STORE </span>
-            <span class="bar__example-spacer"></span>
-            <button mat-button class="bar__cart" routerLink="/cart">
-                <mat-icon>shopping_cart</mat-icon>
-                Cart
-            </button>
-        </mat-toolbar-row>
-    </mat-toolbar>
-    
-    <mat-sidenav-container class="container">
-        <mat-sidenav #sidenav mode="side" class="sidenav">
-            <mat-nav-list class="bar__sidenav__list">
-                <a mat-list-item routerLink="laptops">Laptops</a>
-                <a mat-list-item routerLink="mobiles">Mobiles</a>
-            </mat-nav-list>
-        </mat-sidenav>
-    </mat-sidenav-container>
+  <mat-toolbar class="bar">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="toggleSidenav()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span routerLink="" class="bar__name"> LASM STORE </span>
+      <span class="bar__example-spacer"></span>
+      <button mat-button class="bar__cart" routerLink="/cart">
+        <mat-icon>shopping_cart</mat-icon>
+        Cart
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-sidenav-container class="container">
+    <mat-sidenav #sidenav mode="side" class="sidenav">
+      <mat-nav-list class="bar__sidenav__list">
+        <a mat-list-item routerLink="laptops">Laptops</a>
+        <a mat-list-item routerLink="mobiles">Mobiles</a>
+      </mat-nav-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
 </div>

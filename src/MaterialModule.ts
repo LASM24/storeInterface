@@ -11,18 +11,24 @@ import { MatListModule } from "@angular/material/list";
 // Home
 import { MatCardModule} from '@angular/material/card';
 
+// Info
+import { MatDialogModule } from '@angular/material/dialog';
+
+
 
 @NgModule({
     exports:[
-        // navegacion 
-        MatToolbarModule,
-        MatMenuModule,
+        // Generales
         MatIconModule,
         MatButtonModule,
         MatSidenavModule,
         MatListModule,
+        MatToolbarModule,
+        MatMenuModule,
         // Home
         MatCardModule,
+        // Info
+        MatDialogModule,
     ]
 
 })

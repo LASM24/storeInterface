@@ -1,8 +1,92 @@
-@use '/src/app/shared/variables';
+@use "/src/app/shared/variables";
 
-$toolbar-height: 64px;
+/*@media screen and (min-width: 800px) {
+  
+  // estilos para pantallas grandes 
+  
+  .navbar--1 {
+    font-size: 23px;
+    display: flex;
+    height: 70px;
+    background-color: variables.$primary;
+    align-items: center;
+    justify-content: space-around;
+  }
 
-.contenedorPadre{
+  .logo--1{
+    text-decoration: none;
+  }
+
+  .nav {
+    position: absolute; 
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: burlywood;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .abrir-menu--1 {
+    display: block;
+    margin-left: auto;
+  }
+
+  .closedd--1 {
+    display: none;
+  }
+  
+  // "desaparicion" del menu para pantallas pequeñas
+  .navbar{
+    display: none;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .abrir-menu{
+    display: none;
+  }
+
+  .closedd{
+    display: none;
+  }
+
+  .nav-list{
+    display: none;
+  }
+
+  .nav{
+    display: none;
+  }
+
+  .laptops--2{
+    display: none;
+  }
+
+  .mopbiles--2{
+    display: none;
+  }
+}
+
+*/
+
+@media screen and (min-width: 800px){
+  .contenedorPadre{
     position: absolute;
 }
 
@@ -13,7 +97,7 @@ $toolbar-height: 64px;
     .sidenav {
         width: 150px; 
         position: absolute;
-        top: $toolbar-height; 
+        top: variables.$toolbar-height; 
         bottom: 0;
 
         &__list {
@@ -45,4 +129,5 @@ $toolbar-height: 64px;
         width: 6rem;
         height: 3rem;
     }
+}
 }
