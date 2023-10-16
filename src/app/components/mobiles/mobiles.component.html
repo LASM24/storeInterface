@@ -26,14 +26,14 @@
         <button type="button" class="card__button card__button--share" (click)="share(product.name)">
           compartir
         </button>
-
         <button
-          class="card__button card__button--details"
-          type="button"
-          [routerLink]="['/products', product.id]"
-        >
-          Detalles
-        </button>
+        mat-raised-button
+        (click)="openDialog(product)"
+        class="card__button card__button--details"
+        type="button"
+      >
+        Detalles
+      </button>
       </mat-card-content>
     </mat-card>
   </div>

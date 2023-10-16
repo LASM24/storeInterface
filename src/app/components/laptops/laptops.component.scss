@@ -63,12 +63,9 @@
     border: none;
     cursor: pointer;
 
-    &--share {
-      background-color: #4caf50;
-    }
-
     &--details {
-      background-color: #f44336;
+      background-color: rgb(255, 255, 255);
+      color: #000;
     }
   }
 }
