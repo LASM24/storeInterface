@@ -21,6 +21,5 @@ export class DialogMobilesComponent {
 
   addToCart(productpc: Product) {
     this.cartService.addToCart(productpc);
-    window.alert('Product added successfully');
   }
 }

@@ -1,6 +1,6 @@
 .cart-title {
   text-align: center;
-  color: #1976d2;
+  color: #fff;
   padding-top: 90px;
 }
 
@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  border: 1px solid #ccc;
 
   &__image {
     margin-right: 10px;
@@ -21,10 +22,12 @@
 
   &__name {
     flex: 1;
+    color: #fff;
   }
 
   &__price {
     margin-left: 10px;
+    color: #fff;
   }
 }
 

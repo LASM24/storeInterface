@@ -21,6 +21,5 @@ export class DialogLaptopsComponent {
 
   addToCart(productpc: Productpc) {
     this.cartService.addToCart(productpc);
-    window.alert('Product added successfully');
   }
 }

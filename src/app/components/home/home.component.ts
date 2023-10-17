@@ -11,7 +11,7 @@ export class HomeComponent {
 
   ngOnInit() {
     this.renderer.addClass(document.body, 'background-class');
-    document.body.style.backgroundImage = 'url(../../../assets/img/fhome.jpg)';
+    document.body.style.backgroundImage = 'url(../../../assets/img/fhome.png)'
     document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundRepeat = 'no-repeat';
     document.body.style.backgroundPosition = 'center';

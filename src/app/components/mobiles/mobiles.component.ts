@@ -31,7 +31,7 @@ export class MobilesComponent {
 
   ngOnInit() {
     this.renderer.addClass(document.body, 'background-class');
-    document.body.style.backgroundImage = 'url(../../../assets/img/fmobiles.jpg)';
+    document.body.style.backgroundImage = 'url(../../../assets/img/fmobiless.jpg)';
     document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundRepeat = 'repeat';
     document.body.style.height = '100%';
