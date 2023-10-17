@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Productpc, pcproducts } from 'src/app/laptops';
 import { DialogLaptopsComponent } from '../dialog-laptops/dialog-laptops.component';
@@ -11,7 +11,10 @@ import { DialogLaptopsComponent } from '../dialog-laptops/dialog-laptops.compone
 export class LaptopsComponent {
   pclist = [...pcproducts];
 
-  constructor(private matDialog: MatDialog) {}
+  constructor(
+    private matDialog: MatDialog,
+    private renderer: Renderer2
+    ) {}
 
   share(name:string) { 
     window.alert('El producto ' + name + ' se ha compartido'); 
@@ -21,9 +24,16 @@ export class LaptopsComponent {
     this.matDialog.open(DialogLaptopsComponent, {
       width: '400px', 
       height: '500px', 
-      data: pc // Pasando el objeto pc al diálogo
+      data: pc 
     });
-  
   }
-  
+
+  ngOnInit() {
+    this.renderer.addClass(document.body, 'background-class');
+    document.body.style.backgroundImage = 'url(../../../assets/img/flaptops.jpeg)';
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundRepeat = 'repeat';
+    document.body.style.height = '100%';
+    document.body.style.width = '100%';
+}
 }

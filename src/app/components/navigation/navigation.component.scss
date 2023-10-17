@@ -1,133 +1,50 @@
 @use "/src/app/shared/variables";
-
-/*@media screen and (min-width: 800px) {
   
-  // estilos para pantallas grandes 
-  
-  .navbar--1 {
-    font-size: 23px;
-    display: flex;
-    height: 70px;
-    background-color: variables.$primary;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .logo--1{
-    text-decoration: none;
-  }
-
-  .nav {
-    position: absolute; 
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 1rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: burlywood;
-    padding: 2rem;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-  }
-
-  .nav.visible {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .abrir-menu--1 {
-    display: block;
-    margin-left: auto;
-  }
-
-  .closedd--1 {
-    display: none;
-  }
-  
-  // "desaparicion" del menu para pantallas pequeñas
-  .navbar{
-    display: none;
-  }
-
-  .logo{
-    display: none;
-  }
-
-  .abrir-menu{
-    display: none;
-  }
-
-  .closedd{
-    display: none;
-  }
-
-  .nav-list{
-    display: none;
-  }
-
-  .nav{
-    display: none;
-  }
-
-  .laptops--2{
-    display: none;
-  }
-
-  .mopbiles--2{
-    display: none;
-  }
-}
-
-*/
-
 @media screen and (min-width: 800px){
   .contenedorPadre{
     position: absolute;
 }
 
-.container {
-    height: 25vh;
+.contenedorPadre {
     display: flex;
-
-    .sidenav {
-        width: 150px; 
-        position: absolute;
-        top: variables.$toolbar-height; 
-        bottom: 0;
-
-        &__list {
-            width: 100%; 
-            z-index: 4;
-        }
-    }
-}
-
-.bar {
-    background-color:variables.$primary;
-    color: variables.$Colorfont;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .bar {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 10;
     top: 0;
-
-    &__name{
-        padding-left: 10px;
-        cursor: pointer;
+  
+    &__name {
+      padding-left: 10px;
+      cursor: pointer;
     }
-
-    &__example-spacer {
-        flex: 1 1 auto;
+  
+    &__list {
+      display: flex;
+      list-style: none;
+      margin: 30rem;
     }
-
+  
+    &__list li {
+      margin-right: 20px;
+      
+    }
+  
+    &__list a {
+      text-decoration: none;
+      color: #fff;
+    }
+  
     &__cart {
-        background-color: rgba(3,3,3, .5);
-        width: 6rem;
-        height: 3rem;
+      background-color: rgba(3, 3, 3, 0.5);
+      width: 6rem;
+      height: 3rem;
     }
-}
-}
+  }
+}  

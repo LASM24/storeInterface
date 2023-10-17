@@ -1,8 +1,8 @@
 .title {
-  padding-top: 5%;
+  padding-top: 6%;
   text-align: center;
   width: 100%;
-  color: #1976d2;
+  color: #fff;
 }
 
 .product-container {
@@ -33,7 +33,7 @@
 
 .card {
   box-shadow: 5px 5px 10px #000;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.3); 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,7 @@
 
     &-link {
       text-decoration: none;
-      color: #000;
+      color: #fff;
     }
   }
 
@@ -56,16 +56,24 @@
     height: auto;
   }
 
-  &__button {
-    margin: 2% 5%;
-    padding: 10px 20px;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    &--details {
-      background-color: rgb(255, 255, 255);
-      color: #000;
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .card__button {
+        margin: 10px 0;
+        width: fit-content;
+
+        &--details {
+          margin-top: 10px;
+        }
+      }
     }
   }
 }

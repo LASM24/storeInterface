@@ -1,15 +1,15 @@
-<div class="dialog-laptops">
-    <div *ngIf="product" class="dialog-laptops__content">
+<div class="dialog-mobiles">
+    <div *ngIf="product" class="dialog-mobiles__content">
       <h1 class="dialog-laptops__content__title">{{ product.name }}</h1>
       <img
         [src]="product.photo"
         [alt]="product.name"
         width="200px"
         height="200px"
-        class="dialog-laptops__content__image"
+        class="dialog-mobiles__content__image"
       />
-      <p class="dialog-laptops__content__price">Precio: {{ product.price | currency }}</p>
-      <p *ngIf="product.description" class="dialog-laptops__content__description">
+      <p class="dialog-mobiles__content__price">Precio: {{ product.price | currency }}</p>
+      <p *ngIf="product.description" class="dialog-mobiles__content__description">
         Descripción: {{ product.description }}
       </p>
       <button type="button" (click)="addToCart(product)" class="content__button--add">

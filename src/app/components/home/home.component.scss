@@ -1,3 +1,5 @@
+@use "/src/app/shared/variables";
+
 .container {
   display: flex;
   align-items: center;
@@ -6,7 +8,7 @@
 
 .card {
   box-shadow: 5px 5px 10px #000;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.3); 
   margin-top: 10%;
   width: 80%;
   max-width: 900px;
@@ -16,13 +18,47 @@
   align-items: center;
 
   &__title {
+    padding-top: 5%;
     text-align: center;
-    font-size: 24px;
+    color: variables.$Colorfont;
+
+    &__h3 {
+      font-size: 2rem;
+    }
   }
 
-  &__photo {
-    margin: 5% auto;
-    max-width: 100%;
-    height: auto;
+  &__content {
+    &__p {
+      text-align: center;
+      padding-top: 0.8rem;
+      font-size: 20px;
+      color: variables.$Colorfont;
+    }
+
+    &__photo {
+      display: flex;
+      margin: 5% auto;
+      margin-top: 1.5rem;
+      max-width: 100%;
+    }
   }
+}
+
+
+.github-link{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 300px;
+}
+
+.twitter-link{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 400px;
+}
+
+.linkedin-link{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 500px;
 }
