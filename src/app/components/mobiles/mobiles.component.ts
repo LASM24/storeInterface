@@ -24,7 +24,7 @@ export class MobilesComponent {
   openDialog(prodcut: Product) {
     this.matDialog.open(DialogMobilesComponent, {
       width: '400px', 
-      height: '500px', 
+      height: '450px', 
       data: prodcut 
     });
   }

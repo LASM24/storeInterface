@@ -23,7 +23,7 @@ export class LaptopsComponent {
   openDialog(pc: Productpc) {
     this.matDialog.open(DialogLaptopsComponent, {
       width: '400px', 
-      height: '500px', 
+      height: '475px', 
       data: pc 
     });
   }

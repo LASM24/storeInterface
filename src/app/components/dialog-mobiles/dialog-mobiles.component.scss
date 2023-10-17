@@ -1,36 +1,48 @@
-.dialog-laptops {
-    &__content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  
-      &__title {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 24px;
-      }
-  
-      &__image {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 20px;
-      }
-  
-      &__price {
-        margin-top: 10px;
-      }
-  
-      &__description {
-        margin-top: 20px;
-      }
-  
-      &__button--add {
-        display: inline-block;
-        margin-right: 10px;
-      }
-  
-      &__button--close {
-        display: inline-block;
-      }
+.dialog-mobiles {
+  & {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden; 
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    &__title {
+      margin-top: 5px; // Reducir el margen superior
+      margin-bottom: 5px; // Reducir el margen inferior
+      font-size: 24px;
+    }
+
+    &__image {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 10px; // Reducir el margen inferior
+    }
+
+    &__price {
+      margin-top: 5px; // Reducir el margen superior
+    }
+
+    &__description {
+      margin-top: 10px; // Reducir el margen superior
+      margin-bottom: 5px; // Reducir el margen inferior
+    }
+
+    &__button--add {
+      display: inline-block;
+      margin-right: 5px; // Reducir el margen derecho
+    }
+
+    &__button--close {
+      display: inline-block;
     }
   }
+}

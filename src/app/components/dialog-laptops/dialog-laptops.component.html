@@ -8,14 +8,28 @@
       height="200px"
       class="dialog-laptops__content__image"
     />
-    <p class="dialog-laptops__content__price">Precio: {{ productpc.price | currency }}</p>
-    <p *ngIf="productpc.description" class="dialog-laptops__content__description">
+    <p class="dialog-laptops__content__price">
+      Precio: {{ productpc.price | currency }}
+    </p>
+    <p
+      *ngIf="productpc.description"
+      class="dialog-laptops__content__description"
+    >
       Descripción: {{ productpc.description }}
     </p>
-    <button type="button" (click)="addToCart(productpc)" class="content__button--add">
+    <button
+      type="button"
+      (click)="addToCart(productpc)"
+      class="content__button--add"
+    >
       Añadir al carrito
     </button>
-    <button type="button" mat-raised-button mat-dialog-close class="content__button--close">
+    <button
+      type="button"
+      mat-raised-button
+      mat-dialog-close
+      class="content__button--close"
+    >
       Cerrar
     </button>
   </div>
