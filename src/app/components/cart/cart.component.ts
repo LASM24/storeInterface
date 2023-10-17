@@ -20,12 +20,18 @@ export class CartComponent {
   }
 
   ngOnInit() {
-    this.renderer.addClass(document.body, 'background-class');
-    document.body.style.backgroundImage = 'url(../../../assets/img/fcart.jpg)';
-    document.body.style.backgroundSize = 'cover';
-    document.body.style.backgroundRepeat = 'repeat';
-    document.body.style.height = '100%';
-    document.body.style.width = '100%';
+    if (this.items.length === 0){
+      this.ngOnInit!
+    }
+    else{
+      this.renderer.addClass(document.body, 'background-class');
+      document.body.style.backgroundImage = 'url(../../../assets/img/fcart.jpg)';
+      document.body.style.backgroundSize = 'cover';
+      document.body.style.backgroundRepeat = 'no-repeat';
+      document.body.style.height = '100%';
+      document.body.style.width = '100%';
+    }
+
 }
 
 }

@@ -16,7 +16,7 @@
 
 .card {
   box-shadow: 5px 5px 10px #000;
-  background-color: rgba(255, 255, 255, 0.2); 
+  background-color: rgba(21, 34, 56, .9);
   margin-top: 10%;
   width: 80%;
   max-width: 900px;
@@ -31,6 +31,7 @@
 
     &__h3 {
       font-size: 2rem;
+      color: rgba(255, 255, 255, 0.3);
     }
   }
 
@@ -39,6 +40,7 @@
       text-align: center;
       padding-top: 0.8rem;
       font-size: 20px;
+      color: rgba(255, 255, 255, 0.3);
     }
 
     &__icons{
@@ -48,7 +50,7 @@
 
     &__photo {
       display: flex;
-      margin: 1% auto;
+      margin: 0% auto;
       max-width: 100%;
     }
   }
