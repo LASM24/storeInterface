@@ -16,7 +16,7 @@
 
 .card {
   box-shadow: 5px 5px 10px #000;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(255, 255, 255, 0.2); 
   margin-top: 10%;
   width: 80%;
   max-width: 900px;
@@ -28,7 +28,6 @@
   &__title {
     padding-top: 5%;
     text-align: center;
-    color: variables.$Colorfont;
 
     &__h3 {
       font-size: 2rem;
@@ -40,13 +39,16 @@
       text-align: center;
       padding-top: 0.8rem;
       font-size: 20px;
-      color: variables.$Colorfont;
+    }
+
+    &__icons{
+      background-color: aqua;
+
     }
 
     &__photo {
       display: flex;
-      margin: 5% auto;
-      margin-top: 1.5rem;
+      margin: 1% auto;
       max-width: 100%;
     }
   }
@@ -57,16 +59,25 @@
   position: absolute;
   margin-top: 10px;
   margin-left: 300px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50% ;
 }
 
 .twitter-link{
   position: absolute;
   margin-top: 10px;
   margin-left: 400px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50% ;
 }
 
 .linkedin-link{
   position: absolute;
   margin-top: 10px;
   margin-left: 500px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50% ;
 }

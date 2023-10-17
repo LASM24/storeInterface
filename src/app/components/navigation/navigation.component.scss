@@ -33,14 +33,21 @@
   
     &__list li {
       margin-right: 20px;
-      
+      padding: 10px;
     }
-  
-    &__list a {
+    &__list .a1 {
+      position: relative;
+      margin-left: -20px;
       text-decoration: none;
       color: #fff;
+      border-bottom: 5px solid rgba(255, 255, 255, 0.8);
+
+      &:hover {
+        padding: 2px;
+        filter: drop-shadow( 0 2px 4px rgba(255, 255, 255, 0.8));
+        color: #fff;
+      }
     }
-  
     &__cart {
       background-color: rgba(3, 3, 3, 0.5);
       width: 6rem;
