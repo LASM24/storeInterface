@@ -55,3 +55,33 @@
     }
   }
 }  
+
+@media screen and (max-width: 800px) {
+  .contenedorPadre {
+    position: relative;
+  }
+
+  .bar {
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+
+    &__name {
+      padding-left: 10px;
+      cursor: pointer;
+      flex: 1;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__cart {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+}
