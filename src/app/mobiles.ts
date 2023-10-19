@@ -12,28 +12,28 @@ export interface Product {
       name: 'Redmi Note 12 Pro',
       price: 1000,
       description: 'La mejor expereincia de Android en un teléfono grande',
-      photo: '../assets/img/note12.jpg'
+      photo: '../assets/img/not12.png'
     },
     {
       id: 2,
       name: 'iPhone X',
       price: 799,
       description: 'Un teléfono grande con una de las mejores pantallas',
-      photo: '../assets/img/iphonex.jpg',
+      photo: '../assets/img/iphonexx.png',
     },
     {
       id: 3,
       name: 'Samsung S23 ultra',
       price: 799,
       description: 'Un teléfono grande con una de las mejores pantallas',
-      photo: '../assets/img/s23.jpg',
+      photo: '../assets/img/s233.png',
     },
     {
       id: 4,
       name: 'Phone X Mini',
       price: 699,
       description: 'Un gran teléfono con una de las mejores cámaras',
-      photo: '../assets/img/iphonexmini.jpg'
+      photo: '../assets/img/minii.png'
     },
     {
       id: 5,
@@ -82,7 +82,7 @@ export interface Product {
       name: 'Xiaomi Mi 11',
       price: 799,
       description: 'Un teléfono de Xiaomi con rendimiento de primera',
-      photo: '../assets/img/mi11.jpg'
+      photo: '../assets/img/mii11.png'
     },
     {
       id: 12,
